@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --color-accent: #238e66;
+  --color-font: #555;
+  --main-bg-color: #f4f6f8;
+  --content-bg-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: var(--main-bg-color);
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+input {
+  border: none;
+  background: transparent;
+}
+
+fieldset {
+  border: none;
+}
